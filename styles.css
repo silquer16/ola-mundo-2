@@ -3,3 +3,32 @@
     max-width: 300px;
     height: auto; /* Mantém a proporção da imagem */
 }
+
+/* Estilize seu carrinho aqui */
+#cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999; /* Certifique-se de que o carrinho apareça acima de outros elementos */
+}
+
+#cart h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-total {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
