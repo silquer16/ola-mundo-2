@@ -1,1 +1,5 @@
 /* Estilize seu site aqui */
+.product img {
+    max-width: 300px;
+    height: auto; /* Mantém a proporção da imagem */
+}
