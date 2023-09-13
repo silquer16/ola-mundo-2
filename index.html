@@ -1,11 +1,11 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja Online</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Minha Loja Online</title>
 </head>
 <body>
     <header>
@@ -24,22 +24,26 @@
             <h2>Produto 1</h2>
             <p>Descrição do Produto 1.</p>
             <p class="price">$19.99</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <button class="add-to-cart" data-product-id="1">Adicionar ao Carrinho</button>
+        </section>
+        <section class="product">
+            <img src="product2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <p>Descrição do Produto 2.</p>
+            <p class="price">$24.99</p>
+            <button class="add-to-cart" data-product-id="2">Adicionar ao Carrinho</button>
         </section>
         <!-- Adicione mais produtos aqui -->
     </main>
+    <aside id="cart">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items">
+            <!-- Os itens do carrinho serão adicionados aqui -->
+        </ul>
+        <p>Total: <span id="cart-total">$0.00</span></p>
+    </aside>
     <footer>
         <p>&copy; 2023 Minha Loja Online</p>
     </footer>
 </body>
 </html>
-<button class="add-to-cart-btn" data-product-id="2">Adicionar ao Carrinho</button>
-<div id="cart">
-    <h2>Carrinho de Compras</h2>
-    <ul id="cart-items">
-        <!-- Os itens do carrinho serão adicionados aqui -->
-    </ul>
-    <p>Total: <span id="cart-total">$0.00</span></p>
-</div>
-<script src="cart.js"></script>
-

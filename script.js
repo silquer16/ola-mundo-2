@@ -28,12 +28,12 @@ function updateCartDisplay() {
 }
 
 // Event listener para botões "Adicionar ao Carrinho"
-const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+const addToCartButtons = document.querySelectorAll(".add-to-cart");
 addToCartButtons.forEach(button => {
     button.addEventListener("click", event => {
         const productId = event.target.getAttribute("data-product-id");
-        const productName = "Produto 1"; // Você pode obter o nome do produto de acordo com o productId
-        const productPrice = 19.99; // Você pode obter o preço do produto de acordo com o productId
+        const productName = event.target.previousElementSibling.previousElementSibling.textContent;
+        const productPrice = parseFloat(event.target.previousElementSibling.textContent.replace("$", ""));
 
         addToCart(productId, productName, productPrice);
         updateCartDisplay();
