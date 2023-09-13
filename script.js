@@ -39,3 +39,15 @@ addToCartButtons.forEach(button => {
         updateCartDisplay();
     });
 });
+
+// Event listener para o botão "Finalizar Compra"
+const checkoutButton = document.getElementById("checkout-button");
+checkoutButton.addEventListener("click", () => {
+    // Lógica para finalizar a compra (pode variar de acordo com as necessidades)
+    alert("Compra finalizada! Obrigado por fazer compras conosco.");
+    
+    // Limpar o carrinho
+    cart = [];
+    cartTotal = 0;
+    updateCartDisplay();
+});
